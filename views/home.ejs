@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <a id="logo" href=""><i class="ri-links-line"></i><span>Hit.Link</span></a>
+        <div id="button">
+            <a id="login" href="/login">Log in</a>
+            <a id="signup" href="/signup">Sign Up</a>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="menu">
+            <a id="createLinkbtn">Short Link</a>
+            <a id="viewLink" href="/links">View Your Links</a>
+        </div>
+        <div class="container" id="createLinkForm">
+            <h1>Shorten a long link</h1>
+            <label>Paste your long link here</label>
+            <div id="input">
+                <form method="post" action="/url">
+                    <input type="text" name="url" id="url" placeholder="https://example.com">
+                    <button type="submit">Generate</button>
+                </form>
+            </div>
+
+        </div>
+
+        
+
+<!-- 
+        <div class="container" id="cpy">
+            <div>
+                <h2>Redirect URL</h2>
+                <a href=""></a>
+            </div>
+            <div id="Short-URL">
+                <h2>Short URL</h2>
+                <a href="https://example.com/abc123" id="createdLink">
+                    https://example.com/abc123
+                </a>
+                <button id="copyBtn">Copy</button>
+            </div>
+            
+        </div> -->
+
+
+
+
+    </div>
+
+
+
+
+    <!-- <script src="/script.js"></script> -->
+</body>
+
+</html>
