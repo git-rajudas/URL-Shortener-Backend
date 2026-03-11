@@ -68,25 +68,41 @@ Other Tools:
 Backend-Project-Url-Shorter
 │
 ├── controllers
+│   ├── url.js
 │   └── user.js
 │
-├── models
+├── middleware
+│   └── auth.js
+│
+├── modules
+│   ├── url.js
 │   └── user.js
 │
 ├── routes
+│   ├── staticRouter.js
+│   ├── url.js
 │   └── user.js
 │
 ├── service
 │   └── auth.js
 │
-├── views
-│   ├── login.ejs
-│   ├── signup.ejs
-│   └── home.ejs
+├── public
+│   ├── script.js
+│   └── style.css
 │
-├── app.js
+├── views
+│   ├── home.ejs
+│   ├── links.ejs
+│   ├── login.ejs
+│   └── signup.ejs
+│
+├── Style
+│
+├── connect.js
+├── index.js
 ├── package.json
-└── README.md
+├── package-lock.json
+└── .gitignore
 ```
 
 ---
@@ -104,11 +120,48 @@ Go into project folder:
 ```bash
 cd Backend-Project-Url-Shorter
 ```
+## 📦 Install Dependencies
 
-Install dependencies:
+Make sure you have **Node.js** installed.
+
+Then run:
 
 ```bash
 npm install
+```
+
+This will install all required packages listed in `package.json`.
+
+---
+
+## 📚 Project Dependencies
+
+This project uses the following Node.js packages:
+
+* **express** – Web framework
+* **mongoose** – MongoDB ODM
+* **ejs** – Template engine
+* **cookie-parser** – Parse cookies from requests
+* **jsonwebtoken** – Authentication using JWT
+* **uuid** – Generate unique session IDs
+* **nanoid** – Generate short unique IDs
+* **shortid** – Short unique ID generator
+* **nodemon** – Auto-restart server during development
+
+Example `package.json` dependencies:
+
+```json
+"dependencies": {
+  "cookie-parser": "^1.4.7",
+  "ejs": "^4.0.1",
+  "express": "^5.2.1",
+  "jsonwebtoken": "^9.0.3",
+  "mongoose": "^9.2.1",
+  "nanoid": "^5.1.6",
+  "nodemon": "^3.1.11",
+  "shortid": "^2.2.17",
+  "uuid": "^13.0.0"
+}
 ```
 
 ---
