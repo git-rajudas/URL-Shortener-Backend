@@ -15,7 +15,7 @@ const userRoute = require('./routes/user')
 
 
 const app = express();
-const PORT = 8001;
+const PORT = process.env.PORT || 3000;
 
 
 
